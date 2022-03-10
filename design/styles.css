@@ -15,17 +15,23 @@
 }
 
 body {
-    background-color: #cddbf0;
+    background-color: #d5e1ef;
     font-family: var(--body-font);
 }
 
 .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 90px 20px;
+    margin: 7rem 5rem;
     border-radius: 20px;
+    max-width: 335px;
 }
 
 .qr-code {
@@ -35,20 +41,20 @@ body {
     border-radius: 15px;
 }
 
+h1, p {
+    margin: 1.3rem;
+    text-align:center;
+}
 h1 {
     font-weight: 700;
-    margin: 1.3rem;
     font-size: var(--h1-font-size);
     color: #25304d;
-    text-align: center;
 }
 
 p {
    font-size: 15px;
    font-weight: 400;
    color: #82858e;
-   text-align:center;
-   margin: 1.3rem;
    margin-top: 0px;
    padding-bottom: 1.5rem;
 }
@@ -61,7 +67,10 @@ p {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-/* Styles for mobile design */
-@media screen and (max-width: 375px) {
 
+@media screen and (max-width: 375px) {
+    .container {
+        margin: 5rem 1.5rem;
+    }
+    
 }
